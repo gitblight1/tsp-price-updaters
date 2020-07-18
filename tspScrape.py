@@ -81,7 +81,7 @@ if __name__ == '__main__':
     except:
         lastDate = '01/01/2010'
 
-    if lastDate == date.today().strftime('%m/%d/%Y'):
+    if lastDate == datetime.today().strftime('%m/%d/%Y'):
         print 'already have prices through', lastDate
         exit(0)
 
