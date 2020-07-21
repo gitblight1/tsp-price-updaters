@@ -11,7 +11,7 @@ fundTag = {'G' : 'TSPGFUND',
            'I' : 'TSPIFUND'}
 
 now = datetime.today()
-tspPricesUrl ='https://secure.tsp.gov/components/CORS/getSharePrices.html'
+tspPricesUrl ='https://secure.tsp.gov/components/CORS/getSharePricesRaw.html'
 
 book = moneydance.getCurrentAccountBook()
 currencies = book.getCurrencies()

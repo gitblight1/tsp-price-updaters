@@ -25,7 +25,7 @@ fundTag = {
     'I'     : 'TSPIFUND'}
 
 now = date.today().strftime('%Y%m%d')
-tspPricesUrl = 'https://secure.tsp.gov/components/CORS/getSharePrices.html'
+tspPricesUrl = 'https://secure.tsp.gov/components/CORS/getSharePricesRaw.html'
 
 def writeNewRows(fileObject, rows):
     writer = csv.writer(fileObject)
