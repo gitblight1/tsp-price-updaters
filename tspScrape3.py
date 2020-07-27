@@ -8,7 +8,6 @@ from datetime import datetime, timedelta, date
 
 fundTag = {
     'Linc'  : 'TSPLINCOME',
-    'L2020' : 'TSPL2020',
     'L2025' : 'TSPL2025',
     'L2030' : 'TSPL2030',
     'L2035' : 'TSPL2035',
