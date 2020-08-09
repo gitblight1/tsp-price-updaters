@@ -45,7 +45,7 @@ def convertRowsForQuicken(page):
     foundNew = False
     newRows = []
 
-    for row in rows[:0:-1]:
+    for row in rows[1:]: # first row is header
         currDate = datetime.strptime(row[0],
                                      '%Y-%m-%d').strftime('%m/%d/%Y')
         for i in range(1, len(row)):

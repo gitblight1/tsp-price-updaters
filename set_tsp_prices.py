@@ -31,7 +31,7 @@ def addRowsToMoneydance(page):
     tagRow = rows[0]
     newRows = 0
 
-    for row in rows[:0:-1]:
+    for row in rows[1:]: # first row is header
         currDate = datetime.strptime(row[0],
                                      '%Y-%m-%d').strftime('%Y%m%d')
         for i in range(1, len(row)):
