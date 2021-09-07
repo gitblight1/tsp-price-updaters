@@ -68,17 +68,18 @@ def setPriceForSecurity(symbol, price, dateint):
     security.syncItem()
     print "Successfully set price for %s"%(security)
 
-lastDate = now
-for symbol in fundTag.values():
-    newDate = getLastDate(symbol)
-    if newDate < lastDate:
-        lastDate = newDate
+if __name__ == '__main__':
+    lastDate = now
+    for symbol in fundTag.values():
+        newDate = getLastDate(symbol)
+        if newDate < lastDate:
+            lastDate = newDate
 
-startDate = (lastDate + timedelta(1)).strftime('%Y%m%d')
+    startDate = (lastDate + timedelta(1)).strftime('%Y%m%d')
 
-page = getPricesFromPage(tspPricesUrl,
-                         startDate,
-                         now.strftime('%Y%m%d'))
-updated = addRowsToMoneydance(page)
+    page = getPricesFromPage(tspPricesUrl,
+                            startDate,
+                            now.strftime('%Y%m%d'))
+    updated = addRowsToMoneydance(page)
 
-print 'Added %d prices'%(updated)
+    print 'Added %d prices'%(updated)
