@@ -2,8 +2,8 @@
 Scripts to automate download of current [TSP](https://www.tsp.gov) fund prices.
 
 ## Scripts
-* `tspScrape.py` gets prices from a given start date for TSP funds, and creates two csv files for import into Quicken. The first file has all prices since the start date, the second file only contains dates after the last date in the first file (i.e., since the last time the script was run)
-* `tspScrape3.py` is the Python 3 version of tspScrape, for those who live in the now.
+* `tspScrape.py` gets prices from a given start date for TSP funds, and creates two csv files for import into Quicken. The first file has all prices since the start date, the second file only contains dates after the last date in the first file (i.e., since the last time the script was run). NOTE: this script has NOT been updated to reflect the June 2022 changes to the TSP site, and may not ever be. Switch to Python 3 already.
+* `tspScrape3.py` is the Python 3 version of tspScrape, for those who live in the now. This script HAS been updated to run with the updated TSP site.
 * `set_tsp_prices.py` is meant for use with [Moneydance](https://infinitekind.com/moneydance). It assumes you've already created securities for any funds you wish to get prices for.
 
 ## Usage
